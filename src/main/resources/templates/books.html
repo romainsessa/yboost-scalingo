@@ -1,0 +1,24 @@
+<html>
+<body>
+
+Book list
+<table>
+    <thead>
+        <tr>
+            <th> Id </th>
+            <th> Name </th>
+        </tr>
+    </thead>
+    <tbody>
+	<tr th:if="${books.empty}">
+            <td colspan="2"> No Books Available </td>
+        </tr>
+        <tr th:each="book : ${books}">
+            <td><span th:text="${book.id}"> Id </span></td>
+            <td><span th:text="${book.name}"> Name </span></td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
