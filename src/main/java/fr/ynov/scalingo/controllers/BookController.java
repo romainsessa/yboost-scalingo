@@ -16,7 +16,7 @@ public class BookController {
 	
 	Logger logger = LoggerFactory.getLogger(getClass());
 	
-	@Value("${SCALINGO_CONTAINER}")
+	@Value("${CONTAINER}")
 	private String containerId;
 	
 	private BookService bookService;
