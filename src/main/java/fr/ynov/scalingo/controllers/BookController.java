@@ -27,6 +27,7 @@ public class BookController {
 
 	@GetMapping
 	public String getAllBook(Model model) {
+		logger.error("....");
 		logger.info("------------- getAllBook on container : " + containerId);
 		model.addAttribute("books", bookService.getAll());
 		return "books";
